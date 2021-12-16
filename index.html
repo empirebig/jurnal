@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Journal</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="headerBody">
+                    <nav class="headerMenu">
+                        <ul class="headerList">
+                            <li class="file">
+                                <div class="headerLink">Файл</div>
+                            </li>
+                            <li class="struct disabledLink disabled">
+                                <div class="headerLink">Структура</div>
+                            </li>
+                            <li class="stats disabledLink disabled">
+                                <div class="headerLink">Статистика</div>
+                            </li>
+                            <li class="support">
+                                <div class="headerLink">Помощь</div>
+                            </li>
+                            <li class="about">
+                                <div class="headerLink">О приложении</div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="container">
+                <div class="filePage">
+                    <h1 class="pageName">Файл</h1>
+                    <h3 class="pageName">Загрузка</h3>
+                    <div class="box">
+                        <input id="inputFile" class="inputFile fileUpload" type="file" accept="text/csv,text/plain,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                        <label class="fileBtn" for="inputFile">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                            <span>Choose a file…</span>
+                        </label>
+                    </div>
+                    <div class="disabled TableBox">
+                        <table class="table">
+                            <tbody class="fileTableBody">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="downloadSection disabled">
+                        <hr>
+                        <h3 class="pageName">Скачивание</h3>
+                        <label class="btn downloadBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>
+                            <span>Download</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="pageHide structPage">
+                    <h1 class="pageName">Структура</h1>
+                    <div style=" overflow-x: scroll; ">
+                        <table class="table">
+                            <tbody class="fileTableBody">
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+                    <h3 class="pageName">Добавление</h3>
+                    <div class="inputs">
+                        <h1 class="pageName">Загрузите файл!</h1>
+                    </div>
+                    <label class="btn AddBtn noLoadFile">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        <span>Add</span>
+                    </label>
+                    <hr>
+                    <h3 class="pageName">Удаление</h3>
+                    <input type="text" class="input deleteField" placeholder="name">
+                    <br>
+                    <label class="btn deleteFieldBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 13H5v-2h14v2z"/></svg>
+                        <span>Delete</span>
+                    </label>
+                </div>
+                <div class="pageHide statsPage">
+                    <h1 class="pageName">Статистика</h1>
+                    <div style=" overflow-x: scroll; ">
+                        <table class="table">
+                            <tbody class="fileTableBody">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="QClasses disabled">
+                        <hr>
+                        <h3 class="pageName">Статистика | Классы</h3>
+                        <div class="allClasses">
+                            <label class="btn AllClassesBtn">Все</label>
+                            <label class="btn OneClassesBtn">Определенный</label>
+                        </div>
+                    </div>
+                    <div class="OneClass disabled">
+                        <hr>
+                        <h3 class="pageName">Статистика | Определенный класс</h3>
+                        <div class="oneStats">
+                            <h1 class="pageName">Загрузите файл!</h1>
+                        </div>
+                        <div class="statsOneDisabled disabled">
+                            <hr>
+                            <h3 class="pageName">Статистика</h3>
+                            <div>
+                                <h5 class="pageName statsOneHead"></h5>
+                                <div class="statsOneBtn">
+
+                                </div>
+                                <div class="statsOneClassDisabled disabled">
+                                    <hr>
+                                    <h3 class="pageName">Статистика</h3>
+                                    <h5 class="pageName statsOneLHead"></h5>
+                                    <div class="statsOneTables">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="AllClass disabled">
+                        <hr>
+                        <h3 class="pageName">Статистика | Все классы</h3>
+                        <div class="inputsStats">
+                            <h1 class="pageName">Загрузите файл!</h1>
+                        </div>
+                        <div class="statsDisabled disabled">
+                            <hr>
+                            <h3 class="pageName">Статистика</h3>
+                            <div>
+                                <h5 class="pageName statsHead"></h5>
+                                <div class="statsTables">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pageHide supportPage">
+                    <h1 class="pageName">Помощь</h1>
+                    <div class="pageName">Вкладка Файл</div>
+                    Нужна для загрузки / выгрузки файлов в формате csv
+                    <hr>
+                    <div class="pageName">Вкладка структура<div class="RED">Требуется загруженный файл</div></div>
+                    Нужна для добавления / удаления строк таблицы
+                    <hr>
+                    <div class="pageName">Вкладка cтатистика<div class="RED">Требуется загруженный файл</div></div>
+                    Нужна для получение статистики
+                    <hr>
+                    <div class="pageName">Вкладка помощь</div>
+                    Помощь по использованию данного приложения
+                    <hr>
+                    <div class="pageName">О приложении</div>
+                    Информация о создателе данного приложения
+                    <hr>
+                </div>
+                <div class="pageHide aboutPage">
+                    <h1 class="pageName">О приложении</h1>
+                    <div class="pageName">ФИО</div>
+                    <hr>
+                    <div class="pageName">КОНТАКТНЫЕ ДАННЫЕ</div>
+                    <hr>
+                    <img class="avatar" src="./assets/avatar.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/app.js"></script>
+    <script src="./assets/switchPages.js"></script>
+</body>
+</html>

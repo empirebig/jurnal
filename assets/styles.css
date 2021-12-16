@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+
+*,:after,:before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: #000
+}
+
+body,html {
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #fff
+}
+
+table {
+    border-collapse: collapse
+}
+
+td {
+    padding: 3px;
+    border: 1px solid #000
+}
+
+hr {
+    border: 0;
+    background-color: #000;
+    color: #000;
+    height: 2px;
+    margin: 10px 0
+}
+
+svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -.15em
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    user-select: none
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #37474F
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px
+}
+
+.headerBody {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-content: center
+}
+
+.headerLink {
+    cursor: pointer;
+    user-select: none;
+    margin: 10px 20px;
+    color: #fff
+}
+
+.headerList {
+    display: flex
+}
+
+.headerList li {
+    list-style: none;
+    cursor: pointer
+}
+
+.headerMenu {
+    margin: auto
+}
+
+.content {
+    padding-top: 80px;
+    text-align: center
+}
+
+.pageHide {
+    display: none
+}
+
+.filePage {
+    position: relative;
+    margin: auto
+}
+
+.inputFile {
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1
+}
+
+.inputFile+label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: .625rem 1.25rem
+}
+
+.inputFile+label:hover,.inputFile.has-focus+label,.inputFile:focus+label {
+    background-color: #2979ff
+}
+
+.fileBtn {
+    color: #f1e5e6;
+    background-color: #448aff
+}
+
+.box {
+    padding-top: 20px
+}
+
+.pageName {
+    padding-top: 10px
+}
+
+.btn,.input {
+    margin: 10px 0;
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: .625rem 1.25rem;
+    background-color: #448aff
+}
+
+.btn {
+    color: #f1e5e6;
+    user-select: none;
+    min-width: 200px
+}
+
+.btn:hover {
+    background-color: #2979ff
+}
+
+.input {
+    color: #000
+}
+
+.input:focus {
+    background-color: #2979ff
+}
+
+.input::placeholder {
+    color: #000
+}
+
+.noLoadFile {
+    display: none
+}
+
+.disabled {
+    display: none!important
+}
+
+.statsTables {
+    margin-top: 20px
+}
+
+.legend {
+    text-align: left;
+    margin-bottom: 20px
+}
+
+.legend,.statsOneTables {
+    margin-top: 20px
+}
+
+.RED {
+    color: red
+}
+
+.avatar {
+    margin-top: 20px;
+    border-radius: 50%;
+    max-width: 400px
+}
+
+.TableBox {
+    overflow-x: scroll;
+    margin: 20px auto
+}
